@@ -126,7 +126,8 @@ export class CardsService {
         where: { name: cardData.name },
       });
       if (!existing) {
-        await this.cardsRepository.save(this.cardsRepository.create(cardData));
+        const card = this.cardsRepository.create(cardData as any);
+        await this.cardsRepository.save(card);
       }
     }
   }

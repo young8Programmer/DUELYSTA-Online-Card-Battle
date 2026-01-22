@@ -28,7 +28,7 @@ interface AuthenticatedSocket extends Socket {
     credentials: true,
   },
 })
-export class WebSocketGateway implements OnGatewayConnection, OnGatewayDisconnect {
+export class GameWebSocketGateway implements OnGatewayConnection, OnGatewayDisconnect {
   @WebSocketServer()
   server: Server;
 
