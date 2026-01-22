@@ -1,0 +1,79 @@
+.leaderboard {
+  min-height: 100vh;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.leaderboard-header h1 {
+  color: #667eea;
+  font-size: 32px;
+}
+
+.leaderboard-table {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.leaderboard-header-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 100px 100px 120px;
+  gap: 20px;
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 100px 100px 120px;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.2s;
+}
+
+.leaderboard-row:hover {
+  background: #f9f9f9;
+}
+
+.rank {
+  font-weight: bold;
+  color: #667eea;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.rating {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.wins {
+  color: #4caf50;
+}
+
+.losses {
+  color: #f44336;
+}
+
+.win-rate {
+  font-weight: 600;
+}
